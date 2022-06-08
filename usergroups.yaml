@@ -1,0 +1,20 @@
+# users dont matter, we really are only working with usergroups
+
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: dev-grp
+users:
+  - user1
+  - user2
+---
+
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: ops-grp
+users:
+  - user3
+  - user4
+
+---
